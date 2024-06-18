@@ -8,7 +8,14 @@ This project implements an Arabic OCR (Optical Character Recognition) manuscript
 
 The system is designed to recognize handwritten Arabic text. It combines CNNs for feature extraction, RNNs (LSTM) for sequence modeling, and CTC for aligning predicted sequences with actual text.
 
-Certainly! Here's how you can integrate that information into your README:
+### Dataset
+
+The IFN/ENIT database is the most widely used and popular database for handwritten Arabic text recognition research, published by Pechwitz and Maergner. It consists of 1,000 forms written by 411 distinct writers, divided into five training and testing groups. The database includes approximately 27,000 handwritten Arabic names representing Tunisian city names, with a lexicon size of 937 place names. Each word in the database has a corresponding Ground Truth (GT) file containing information such as the baseline position and individual characters used.   
+
+
+**IFN/ENIT Database Samples**    
+![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/3fd62982-faf4-43b8-a059-04d8429634d7)
+
 
 ---
 
@@ -73,14 +80,6 @@ For example:
 
 
 
-
-### Dataset
-
-The IFN/ENIT database is the most widely used and popular database for handwritten Arabic text recognition research, published by Pechwitz and Maergner. It consists of 1,000 forms written by 411 distinct writers, divided into five training and testing groups. The database includes approximately 27,000 handwritten Arabic names representing Tunisian city names, with a lexicon size of 937 place names. Each word in the database has a corresponding Ground Truth (GT) file containing information such as the baseline position and individual characters used.   
-
-
-**IFN/ENIT Database Samples**    
-![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/3fd62982-faf4-43b8-a059-04d8429634d7)
 
 
 ### Sequencing of Data
@@ -177,4 +176,17 @@ To use this OCR system, follow these steps:
 
 1. Clone the repository.
 2
+
+Certainly! Here's the revised acknowledgement section reflecting the specific contribution of the mentioned paper to your work:
+
+---
+
+### Special Acknowledgments
+
+ 
+The following research paper has played a crucial role in shaping and guiding the methodologies applied in this project.
+
+- **Exploring Deep Learning Approaches to Recognize Handwritten Arabic Texts**  
+  **Authors**: Mohamed Eltay, Abdelmalek Zidouri (Senior Member, IEEE), and Irfan Ahmad
+
 
