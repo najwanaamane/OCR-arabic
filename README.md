@@ -32,8 +32,24 @@ The system is designed to recognize handwritten Arabic text. It combines CNNs fo
 - **Flexible Alignment**: Aligns input data with output labels without pre-segmentation.
 - **Handles Variable Lengths**: Manages sequences of different lengths.
 - **CTC Blank Token**: Improves alignment and accuracy by allowing the network to output a blank token for better sequence handling.
+
   
- ![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/5e6fcd80-ad41-4a72-b4b5-c987d681de21)
+ ![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/5e6fcd80-ad41-4a72-b4b5-c987d681de21)   
+
+ #### Additional Techniques: Beam Search and Mapping
+-**Beam Search**: Implemented to enhance sequence decoding, providing a more refined approach to predicting sequences.  
+
+![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/4bb79267-9822-4f14-a9de-f54c81fabc92)
+
+
+
+![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/7197e97b-e0cd-4eba-aa6b-8411640211f9)
+
+
+-**Sequence Mapping**: After prediction using beam search, sequences are mapped to actual Arabic words using a character mapping technique.   
+
+![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/a8314d96-f7d1-461c-ad50-c2beac7114e6)
+
 
 
 ### Dataset
@@ -114,17 +130,6 @@ To use this OCR system, follow these steps:
 4. Train the model using the provided training script.
 5. Use the trained model to recognize text from handwritten Arabic manuscript images.
 
-### Conclusion
-
-This OCR system leverages the strengths of CNNs, RNNs, and CTC to accurately recognize and interpret handwritten Arabic text, providing a robust solution for Arabic manuscript digitization.
-
----
-
-### Acknowledgments
-
-This project is built upon the foundational concepts of deep learning and OCR, utilizing CNNs, RNNs, and CTC for a comprehensive text recognition system.
-
----
 
 By understanding and using this architecture, developers and researchers can build effective OCR systems for various handwritten text recognition tasks.
 
