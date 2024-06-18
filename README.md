@@ -36,22 +36,6 @@ The system is designed to recognize handwritten Arabic text. It combines CNNs fo
   
  ![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/5e6fcd80-ad41-4a72-b4b5-c987d681de21)   
 
- #### Additional Techniques: Beam Search and Mapping
--**Beam Search**: Implemented to enhance sequence decoding, providing a more refined approach to predicting sequences.  
-
-![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/4bb79267-9822-4f14-a9de-f54c81fabc92)
-
-
-
-![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/7197e97b-e0cd-4eba-aa6b-8411640211f9)
-
-
--**Sequence Mapping**: After prediction using beam search, sequences are mapped to actual Arabic words using a character mapping technique.   
-
-![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/97264573-decc-45a6-883a-fff185f18492)
-
-
-![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/a8314d96-f7d1-461c-ad50-c2beac7114e6)
 
 
 
@@ -73,9 +57,36 @@ The dataset was split into training and testing sets based on the following stra
 3. **Training Set**: Includes images from `set_a`, `set_b`, and `set_c`.
 4. **Testing Set**: Includes images from `set_d`.
 
-This approach ensures that the model is trained on a diverse set of examples and evaluated on a separate set to test its generalization performance.
+This approach ensures that the model is trained on a diverse set of examples and evaluated on a separate set to test its generalization performance.   
 
-###  Division of Sets
+### Training Details
+
+- **Epochs**: 20
+- **Best Validation Loss**: 10.9893 at epoch 19   
+
+  ![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/001b4a87-d662-4f0e-8f62-f5e2c57fc744)
+
+
+
+ #### Additional Techniques: Beam Search and Mapping
+-**Beam Search**: Implemented to enhance sequence decoding, providing a more refined approach to predicting sequences.  
+
+![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/4bb79267-9822-4f14-a9de-f54c81fabc92)
+
+
+
+![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/7197e97b-e0cd-4eba-aa6b-8411640211f9)
+
+
+-**Sequence Mapping**: After prediction using beam search, sequences are mapped to actual Arabic words using a character mapping technique.   
+
+![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/97264573-decc-45a6-883a-fff185f18492)
+
+
+![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/a8314d96-f7d1-461c-ad50-c2beac7114e6)
+
+
+###  Division of Sets and Testing
 
 1.**Data Paths and Ground Truth Files:**   
 
@@ -118,10 +129,6 @@ Where:
 - \( D \) is the total number of deleted characters.
 - \( N \) is the total number of characters in the evaluation set.
 
-### Training Details
-
-- **Epochs**: 20
-- **Best Validation Loss**: 10.9893 at epoch 19
 
 ### Installation and Usage
 
