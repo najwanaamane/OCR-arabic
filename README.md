@@ -128,13 +128,5 @@ Where:
 To use this OCR system, follow these steps:
 
 1. Clone the repository.
-2. Install the required dependencies.
-3. Prepare your dataset in the specified format.
-4. Train the model using the provided training script.
-5. Use the trained model to recognize text from handwritten Arabic manuscript images.
-
-
-By understanding and using this architecture, developers and researchers can build effective OCR systems for various handwritten text recognition tasks.
-
-
+2
 
