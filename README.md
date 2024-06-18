@@ -1,16 +1,4 @@
-# OCR-arabic
-ocr system for arabic manuscript using CRNN+CTC architecture    
-Based on the code snippet you provided, it appears that the data sequencing strategy is as follows:
 
-1. The `sets` list includes four sets: `set_a`, `set_b`, `set_c`, and `set_d`.
-2. The code constructs a list of image file paths for each set by searching for `.tif` files within the respective directories.
-3. The data is then split into training and testing sets:
-    - Files from `set_d` are added to the `test_data`.
-    - Files from the other sets (`set_a`, `set_b`, and `set_c`) are added to the `train_data`.
-
-This means that the model was trained on images from `set_a`, `set_b`, and `set_c`, and then evaluated on images from `set_d`.
-
-### Updated README with Sequencing Explanation
 
 ## Arabic OCR Manuscript System Using CRNN and CTC Architecture
 
@@ -20,7 +8,13 @@ This project implements an Arabic OCR (Optical Character Recognition) manuscript
 
 The system is designed to recognize handwritten Arabic text. It combines CNNs for feature extraction, RNNs for sequence modeling, and CTC for aligning predicted sequences with actual text.
 
-### Model Architecture
+### Model Architecture   
+
+![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/e0d500c4-bcb9-4b6c-bb92-e151d6977ccd)   
+
+![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/5e6fcd80-ad41-4a72-b4b5-c987d681de21)
+
+
 
 #### CNN for Feature Extraction
 
@@ -44,7 +38,9 @@ The system is designed to recognize handwritten Arabic text. It combines CNNs fo
 
 The IFN/ENIT database is the most widely used and popular database for handwritten Arabic text recognition research, published by Pechwitz and Maergner. It consists of 1,000 forms written by 411 distinct writers, divided into five training and testing groups. The database includes approximately 27,000 handwritten Arabic names representing Tunisian city names, with a lexicon size of 937 place names. Each word in the database has a corresponding Ground Truth (GT) file containing information such as the baseline position and individual characters used.
 
-![IFN/ENIT Database Samples](path/to/your/image.png)
+![IFN/ENIT Database Samples]   
+![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/3fd62982-faf4-43b8-a059-04d8429634d7)
+
 
 ### Sequencing of Data
 
@@ -90,8 +86,8 @@ Ground truth and predicted texts are mapped and printed.
 
 #### Character Accuracy Rate (CAR)
 
-Character Accuracy Rate (CAR) is the percentage of characters that have been correctly recognized in all words. It is usually measured using the edit distance method and is defined as the minimum number of insertions, deletions, or substitutions of a single terminal needed to transform one string into the other.
-
+Character Accuracy Rate (CAR) is the percentage of characters that have been correctly recognized in all words. It is usually measured using the edit distance method and is defined as the minimum number of insertions, deletions, or substitutions of a single terminal needed to transform one string into the other.   
+![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/a2a72ebf-1eda-4d9d-9b1d-80b6b873a6e7)
 \[ CAR = \left(1 - \frac{S + I + D}{N}\right) \times 100 \]
 
 Where:
