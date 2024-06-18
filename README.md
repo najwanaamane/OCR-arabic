@@ -62,6 +62,8 @@ This approach ensures that the model is trained on a diverse set of examples and
 ### Training Details
 
 - **Epochs**: 20
+- **Loss Function**: CTC Loss; specifically designed for sequence labeling tasks, it helps the model learn to predict the most likely character sequences for the input images by penalizing deviations from the ground truth while accounting for potential variations in sequence lengths.
+
 - **Best Validation Loss**: 10.9893 at epoch 19   
 
   ![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/001b4a87-d662-4f0e-8f62-f5e2c57fc744)
