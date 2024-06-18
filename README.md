@@ -48,6 +48,9 @@ The system is designed to recognize handwritten Arabic text. It combines CNNs fo
 
 -**Sequence Mapping**: After prediction using beam search, sequences are mapped to actual Arabic words using a character mapping technique.   
 
+![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/97264573-decc-45a6-883a-fff185f18492)
+
+
 ![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/a8314d96-f7d1-461c-ad50-c2beac7114e6)
 
 
