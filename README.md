@@ -96,20 +96,24 @@ The paths to the images and ground truth files are defined at the beginning.
 true variable holds the path to a specific .tru file.
 racine_gt is the root path for ground truth files.
 
-2.**Fetching Ground Truth:**
+2.**Fetching Ground Truth:**   
 
-The get_Word function reads the ground truth text from the .tru files. It extracts the relevant word from the sixth line of the file.   
-3.**Preprocessing and Prediction:**   
+The get_Word function reads the ground truth text from the .tru files. It extracts the relevant word from the sixth line of the file.     
 
-preprocess_image function preprocesses the images to the required format.
-decode_prediction decodes the model predictions into readable text using a character mapping.
+3.**Preprocessing and Prediction:**      
+
+preprocess_image function preprocesses the images to the required format.   
+decode_prediction decodes the model predictions into readable text using a character mapping.    
+
 4.**Inference Model:**   
 
-The inference model is created using the trained model's input and output layers.
-5.**Testing and Evaluation:**   
+The inference model is created using the trained model's input and output layers.   
 
-Multiple tests are run with different image paths (e.g., set_a, set_d).
-Ground truth and predicted texts are mapped and printed.
+5.**Testing and Evaluation:**    
+
+Multiple tests are run with different image paths (e.g., set_a, set_d).   
+Ground truth and predicted texts are mapped and printed.   
+
 ### Results
 
 | Metric                         | Value                   |
