@@ -8,6 +8,41 @@ This project implements an Arabic OCR (Optical Character Recognition) manuscript
 
 The system is designed to recognize handwritten Arabic text. It combines CNNs for feature extraction, RNNs (LSTM) for sequence modeling, and CTC for aligning predicted sequences with actual text.
 
+Certainly! Here's how you can integrate that information into your README:
+
+---
+
+### Challenges in Arabic Manuscript Recognition
+
+Recognizing handwritten Arabic text poses several challenges:
+
+- **Overlaps and Ligatures**: Arabic script often features overlapping characters and ligatures (joined letters), making segmentation and recognition more complex.
+  
+- **Inter and Intra-Writer Variability**: Handwriting styles vary significantly between different writers (inter-writer) and even within the same writer (intra-writer), leading to diverse character shapes and styles.
+  
+- **Positional Variations**: The shape of Arabic letters can vary depending on their position within a word (initial, medial, final, or standalone form).
+
+### Labeling Scheme
+
+To address these challenges, the labeling scheme used in this project follows a detailed approach:
+
+- **Label Format**: Characters are labeled to indicate their position in the word:
+  - 'B': Beginning form
+  - 'M': Middle form
+  - 'E': Ending form
+  - 'A': Standalone form
+ 
+    ![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/e42c5e9b-876c-4fef-a4df-6defc07749be)   
+
+
+For example:
+- 'shB': 'ش' (beginning form of the character)
+- 'taM': 'ت' (middle form of the character)
+- 'aaE': 'ع' (ending form of the character)
+- 'waA': 'و' (standalone form of the character)
+
+
+
 ### Model Architecture   
 
 ![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/e0d500c4-bcb9-4b6c-bb92-e151d6977ccd)   
