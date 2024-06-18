@@ -6,13 +6,12 @@ This project implements an Arabic OCR (Optical Character Recognition) manuscript
 
 ### Overview
 
-The system is designed to recognize handwritten Arabic text. It combines CNNs for feature extraction, RNNs for sequence modeling, and CTC for aligning predicted sequences with actual text.
+The system is designed to recognize handwritten Arabic text. It combines CNNs for feature extraction, RNNs (LSTM) for sequence modeling, and CTC for aligning predicted sequences with actual text.
 
 ### Model Architecture   
 
 ![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/e0d500c4-bcb9-4b6c-bb92-e151d6977ccd)   
 
-![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/5e6fcd80-ad41-4a72-b4b5-c987d681de21)
 
 
 
@@ -33,12 +32,16 @@ The system is designed to recognize handwritten Arabic text. It combines CNNs fo
 - **Flexible Alignment**: Aligns input data with output labels without pre-segmentation.
 - **Handles Variable Lengths**: Manages sequences of different lengths.
 - **CTC Blank Token**: Improves alignment and accuracy by allowing the network to output a blank token for better sequence handling.
+  
+ ![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/5e6fcd80-ad41-4a72-b4b5-c987d681de21)
+
 
 ### Dataset
 
-The IFN/ENIT database is the most widely used and popular database for handwritten Arabic text recognition research, published by Pechwitz and Maergner. It consists of 1,000 forms written by 411 distinct writers, divided into five training and testing groups. The database includes approximately 27,000 handwritten Arabic names representing Tunisian city names, with a lexicon size of 937 place names. Each word in the database has a corresponding Ground Truth (GT) file containing information such as the baseline position and individual characters used.
+The IFN/ENIT database is the most widely used and popular database for handwritten Arabic text recognition research, published by Pechwitz and Maergner. It consists of 1,000 forms written by 411 distinct writers, divided into five training and testing groups. The database includes approximately 27,000 handwritten Arabic names representing Tunisian city names, with a lexicon size of 937 place names. Each word in the database has a corresponding Ground Truth (GT) file containing information such as the baseline position and individual characters used.   
 
-![IFN/ENIT Database Samples]   
+
+**IFN/ENIT Database Samples**    
 ![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/3fd62982-faf4-43b8-a059-04d8429634d7)
 
 
@@ -55,7 +58,7 @@ This approach ensures that the model is trained on a diverse set of examples and
 
 ###  Division of Sets
 
-1.** Data Paths and Ground Truth Files:**   
+1.**Data Paths and Ground Truth Files:**   
 
 The paths to the images and ground truth files are defined at the beginning.
 true variable holds the path to a specific .tru file.
@@ -87,8 +90,8 @@ Ground truth and predicted texts are mapped and printed.
 #### Character Accuracy Rate (CAR)
 
 Character Accuracy Rate (CAR) is the percentage of characters that have been correctly recognized in all words. It is usually measured using the edit distance method and is defined as the minimum number of insertions, deletions, or substitutions of a single terminal needed to transform one string into the other.   
+
 ![image](https://github.com/najwanaamane/OCR-arabic/assets/86806375/a2a72ebf-1eda-4d9d-9b1d-80b6b873a6e7)
-\[ CAR = \left(1 - \frac{S + I + D}{N}\right) \times 100 \]
 
 Where:
 - \( S \) is the total number of substituted characters.
