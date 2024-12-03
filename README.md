@@ -13,6 +13,7 @@ The system is designed to recognize handwritten Arabic text. It combines CNNs fo
 ### Dataset
 
 The IFN/ENIT database is the most widely used and popular database for handwritten Arabic text recognition research, published by Pechwitz and Maergner. It consists of 1,000 forms written by 411 distinct writers, divided into five training and testing groups. The database includes approximately 27,000 handwritten Arabic names representing Tunisian city names, with a lexicon size of 937 place names. Each word in the database has a corresponding Ground Truth (GT) file containing information such as the baseline position and individual characters used.   
+https://drive.google.com/file/d/1LB_-cybwGZbjQ_TqJwqZj2qs3o1Vr5Dz/view?usp=drive_link   
 
 
 **IFN/ENIT Database Samples**    
